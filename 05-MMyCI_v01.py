@@ -74,3 +74,17 @@ ax.set_zlabel('$p_{3}$')
 plt.colorbar(sc1)
 plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
 plt.show()
+
+#################
+# Sixth subplot
+#################
+ax = fig.add_subplot(2, 2, 4, projection='3d')
+c = T
+sc1 = ax.scatter(p_2, p_3, p_1, c=c, vmin=0, vmax=1, s=5)
+ax.view_init(elev=20, azim=235)
+ax.set_xlabel('$p_{1}$')
+ax.set_ylabel('$p_{2}$')
+ax.set_zlabel('$p_{3}$')
+plt.colorbar(sc1)
+plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
+plt.show()
